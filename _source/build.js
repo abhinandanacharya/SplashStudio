@@ -1,7 +1,7 @@
-// Usage:  node _source/build.js https://yourdomain.com
+// Usage:  node _source/build.js https://abhinandanacharya.github.io/SplashStudio
 // Reads template.html and writes every page, sitemap.xml and robots.txt into the folder above.
 const fs=require('fs'),path=require('path');
-const SITE=(process.argv[2]||'https://YOURDOMAIN.com').replace(/\/+$/,'');
+const SITE=(process.argv[2]||'https://abhinandanacharya.github.io/SplashStudio').replace(/\/+$/,'');
 const SRC=__dirname,OUT=path.join(SRC,'..');
 const tpl=fs.readFileSync(path.join(SRC,'template.html'),'utf8');
 const js=tpl.split('<script>')[1];
